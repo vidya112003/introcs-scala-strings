@@ -34,7 +34,7 @@ class RationalScalaTestFlatSpecMatchers extends FlatSpec with Matchers {
   }
 
   it should "handle First Middle Last" in {
-    getFormattedName("George K. Thiruvathukal") should be ("Thruvathukal, George K.")
+    getFormattedName("George K. Thiruvathukal") should be ("Thiruvathukal, George K.")
     getFormattedName("Ludwig van Beethoven") should be ("Beethoven, Ludwig van")
   }
 

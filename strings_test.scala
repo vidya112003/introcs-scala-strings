@@ -25,7 +25,7 @@ class RationalScalaTestFlatSpecMatchers extends FlatSpec with Matchers {
   it should "be exclamatory" in {
      getSentenceType("!") should be ("exclamatory")
      getSentenceType("This rocks!") should be ("exclamatory")
-     getSentenceType("Is this a question?#$@#$#??,.!") should be ("exclamatory")
+     getSentenceType("Is this a question?#$@#$#??,.") should be ("declarative")
      getSentenceType("A sentence not ending in ! or other punctuation is not a sentence") should be ("unknown")    
   }
 
